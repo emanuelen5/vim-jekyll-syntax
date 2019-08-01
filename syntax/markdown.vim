@@ -19,7 +19,7 @@ let b:current_syntax = ''
 unlet b:current_syntax
 syntax include @Liquid syntax/liquid.vim
 
-syntax region yamlFrontMatter matchgroup=frontMatter start="^---$" end="^---$" containedin=@Markdown contains=@YAML
+syntax region yamlFrontMatter matchgroup=frontMatter start="\%^[ \t\n\r]*\_^---$" end="^---$" containedin=@Markdown contains=@YAML
 syntax region liquidObject start="{{" end="}}" containedin=@Markdown contains=@Liquid
 syntax region liquidTag start="{%" end="%}" containedin=@Markdown contains=@Liquid
 
