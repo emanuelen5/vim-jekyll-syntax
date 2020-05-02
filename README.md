@@ -1,17 +1,25 @@
 # Vim syntax highlighting for Jekyll
 
-Additions to Markdown highlighting to correctly syntax highlight the front matter and Liquid objects/tags in Jekyll posts.
+Additions to Markdown/HTML/XML highlighting to correctly syntax highlight the front matter and Liquid objects/tags in Jekyll posts.
+
+Highlights the following regions:
+
+* Front matter
+* Liquid tags
+* Liquid objects
 
 ## Installation
-You can just copy the syntax file into your local `.vim` directory unless you already have custom Markdown syntax highlighting.
+You can just copy the syntax files into your local `.vim` directory unless you already have conflicting custom syntax highlighting.
 
 ```bash
-$ cp vim-jekyll-syntax/syntax/Markdown.md ~/.vim/after/syntax/Markdown.md
+$ cp vim-jekyll-syntax/syntax/* ~/.vim/after/syntax
 ```
 
-## Example of highlighted regions
+## Markdown example that will now highlight correctly
+
 ```markdown
 ---
+# This becomes highlighted like YAML
 foo: bar
 ---
 
