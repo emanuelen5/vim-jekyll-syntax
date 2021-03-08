@@ -20,3 +20,6 @@ syntax region liquidObject start="{{" end="}}" contains=@Liquid keepend
 syntax region liquidTag start="{%" end="%}" contains=@Liquid keepend
 
 hi link frontMatter SpecialComment
+
+syntax cluster mkdNonListItem add=liquidObject
+syntax cluster mkdNonListItem add=liquidTag
