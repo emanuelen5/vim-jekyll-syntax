@@ -27,3 +27,6 @@ foo: bar
 {{ page.foo }}
 ```
 
+## Contributors
+* [RagnarGrootKoerkamp](https://github.com/RagnarGrootKoerkamp): Fix for Liquid tags in Markdown files
+
